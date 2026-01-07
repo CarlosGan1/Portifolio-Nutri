@@ -6,8 +6,50 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="variables.css">
 </head>
 <body>
-  <app-root></app-root>
+
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar__content max-width mb-0">
+        <a href="/">
+          <img src="assets/logo-port.jpg" style = "width: 50px; height: 50px; border-radius: 50%; object-fit: cover;" alt="logo" />
+        </a>
+        <ul class="navbar__links">
+            <li><a href="/app/header/header.html">Início</a></li>
+            <li><a href="/app/about/about.html">Sobre</a></li>
+            <li><a href="/app/skills/skills.html">Dicas</a></li>
+            <li><a href="#projects">Receitas</a></li>
+            <li><a href="#footer">Contato</a></li>
+        </ul>
+        <div class="navbar__mobile">
+          <img src="assets/menu.svg" alt="menu" class="burguer" />
+          <ul class="mobile__links">
+            <li><a href="/app/header/header.html">Início</a></li>
+            <li><a href="/app/about/about.html">Sobre</a></li>
+            <li><a href="/app/skills/skills.html">Receitas e Sugestões</a></li>
+            <li><a href="#projects">Dicas</a></li>
+            <li><a href="#footer">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <app-root></app-root>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer__content max-width mb-0">  
+        <p class="footer__copyright">
+          © 2025 Isadora Sartori. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
 </body>
 </html>
